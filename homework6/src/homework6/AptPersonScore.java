@@ -32,7 +32,8 @@ public class AptPersonScore {
 		System.out.print("\n");
 	}
 	void print() {
-		int[] levelSum = {0, 0, 0, 0, 0}, lineSum = {0, 0, 0};
+		int[] levelSum = new int[aptLevelLen]; //aptLevelLen == level count
+		int[] lineSum  = new int[aptLineLen];  //aptLineLen == line count
 		int totalSum = 0;
 		
 		for(int i=0;i<aptLevelLen;i++) {
@@ -52,7 +53,7 @@ public class AptPersonScore {
 		System.out.print("\n");
 		
 		for(int i=0;i<aptLineLen;i++)
-			System.out.println((i+1)+"호 라인에 사는 거주자는 모두 " + String.format("%02d", levelSum[i]) +"명입니다.");
+			System.out.println((i+1)+"호 라인에 사는 거주자는 모두 " + String.format("%02d", lineSum[i]) +"명입니다.");
 		
 		System.out.print("\n");
 	}
