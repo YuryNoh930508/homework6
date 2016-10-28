@@ -46,6 +46,6 @@ public class AvgScore {
 		
 		avgScore = avgScore/8.0;
 		
-		System.out.println("가장 큰 점수와 가장 작은 점수를 제외한 8개의 점수 평균은 " + avgScore + "입니다. \n");
+		System.out.println("가장 큰 점수와 가장 작은 점수를 제외한 8개의 점수 평균은 " + String.format("%.1f", avgScore) + "입니다. \n");
 	}
 }
