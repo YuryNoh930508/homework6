@@ -34,13 +34,13 @@ public class StudentScore {
 	}
 	void print() {
 		String[] className = {"국어", "영어", "수학"};
-		int[] studentSum = new int[s_arrColLen]; //column length = class count
-		int[] classSum = new int[s_arrRowLen];   //row length = student count
+		int[] studentSum = new int[s_arrRowLen]; //column length = class count
+		int[] classSum = new int[s_arrColLen];   //row length = student count
 		
 		for(int i=0;i<s_arrRowLen;i++) {
 			for(int j=0;j<s_arrColLen;j++) {
-				studentSum[i] = scoreArr[i][j];
-				classSum[j]   = scoreArr[i][j];
+				studentSum[i] += scoreArr[i][j];
+				classSum[j]   += scoreArr[i][j];
 			}
 		}
 		
