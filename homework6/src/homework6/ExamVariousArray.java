@@ -3,7 +3,7 @@ import java.util.*;
 
 public class ExamVariousArray {
 	public static void main(String[] args) {
-		int selectedModule;
+		int selectedModule = 0;
 		
 		Scanner s = new Scanner(System.in);
 		
